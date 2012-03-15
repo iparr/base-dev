@@ -1,7 +1,7 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
@@ -13,20 +13,19 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-
 	<!-- dont leave blank for ie <7
 	<base href="" />
 	-->
 
-
 	<link rel="stylesheet" href="assets/css/style.css?v=2">
 
-	<script src="assets/js/libs/modernizr-2.0.6.min.js"></script>
+	<script src="assets/js/libs/modernizr-2.5.3.js"></script>
 </head>
 
 <body>
 
 <div id="container">
+
 	<header>
 
 		<h1 id="logo">Company name</h1>
@@ -52,7 +51,6 @@
 
 	</nav>
 
-
 	<footer>
 
 		<ul>
@@ -63,20 +61,26 @@
 		<span><a href="http://devolute.net">Built by</a></span>	
 
 	</footer>
+
 </div> <!--! end of #container -->
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
 <script defer src="js/script.js"></script>
 
 
 <script> // Change UA-XXXXX-X to be your site's ID
-	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-		load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
+	var _gaq=[
+		['_setAccount','UA-XXXXX-X'],
+		['_trackPageview'],
+		['_trackPageLoadTime']
+	];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 <!--[if lt IE 7 ]>

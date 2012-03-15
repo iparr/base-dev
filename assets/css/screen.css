@@ -1,5 +1,5 @@
 /* * * ******
-	x stylesheet 11.xx
+	x stylesheet 12.xx
 	by Ian Parr for x
 	Reset by Mr. Meyer
 
@@ -33,7 +33,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -78,7 +77,7 @@ table {
 	border-spacing: 0;
 }
 /* end Meyer reset */
-
+/* Following resets, mainly HTML5 boilerplate-influenced. The whole thing is too much for me, personally */
 /* Indicate that 'label' will shift focus to the associated form element */
 label {
 	cursor: pointer;
@@ -88,7 +87,7 @@ label {
 legend {
 	border: 0; *margin-left: -7px; padding: 0;
 }
-/*	 1. Correct font-size not inheriting in all browsers
+/*	* 1. Correct font-size not inheriting in all browsers
 	* 2. Remove margins in FF3/4 S5 Chrome
 	* 3. Define consistent vertical alignment display in all browsers */
 .button, input, select, textarea {
@@ -131,12 +130,20 @@ a {
 
 /* =Headings
 ----------------------------------------------- */
+h1,
+.pseudoH1 {
+	
+}
+
 /* =Structure
 ----------------------------------------------- */
+
+
 /* =Navigation
 ----------------------------------------------- */
 
 /* =Sub nav */
+
 
 /* =Main body copy
 ----------------------------------------------- */
@@ -145,14 +152,17 @@ a {
 
 /* =Social */
 
+
 /* =Buttons, boxes, sidebar and footer
 ----------------------------------------------- */
 
 
 /* =Tables
 ----------------------------------------------- */
+
 /* =Forms
 ----------------------------------------------- */
+
 /* =Multimedia - Video / Audio / Canvas
 ----------------------------------------------- */
 audio, canvas, video {

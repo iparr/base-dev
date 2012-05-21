@@ -112,7 +112,7 @@ td {
 ----------------------------------------------- */
 html {
 	font-size: 100%;
-	overflow-y: scroll;
+	overflow-y: scroll; /* Warning: remove this if building for iFrames (eg. Facebook apps) */
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
